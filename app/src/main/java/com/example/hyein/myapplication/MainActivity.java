@@ -71,10 +71,15 @@ public class MainActivity extends AppCompatActivity {
          public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
              if (switch1.isChecked()){
                  dc.setVisibility(View.VISIBLE);
+
                  choronometer2.setBase(SystemClock.elapsedRealtime());
                  choronometer2.start();
                  choronometer2.setTextColor(Color.RED);
                  imageView.setImageResource(R.drawable.pp);
+             }
+             else{
+                 dc.setVisibility(View.INVISIBLE);
+                 aa.setVisibility(View.INVISIBLE);
              }
          }
      });
@@ -155,6 +160,27 @@ public class MainActivity extends AppCompatActivity {
                 aa.setVisibility(View.VISIBLE);
             }
         });
+
+        radioButton9.setOnClickListener(new View.OnClickListener(){
+            public void  onClick(View v ){
+                timePicker3.setVisibility(View.INVISIBLE);
+                calendarView2.setVisibility(View.VISIBLE);
+            }
+        });
+        radioButton10.setOnClickListener(new View.OnClickListener(){
+            public void  onClick(View v ){
+                timePicker3.setVisibility(View.VISIBLE);
+                calendarView2.setVisibility(View.INVISIBLE);
+            }
+        });
+
+
+      button5.setOnClickListener(new View.OnClickListener(){
+          public void onClick(View v){
+              dc.setVisibility(View.VISIBLE);
+              aa.setVisibility(View.INVISIBLE);
+          }
+      });
 
     }
 }
