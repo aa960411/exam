@@ -244,6 +244,27 @@
 
                 </RadioGroup>
 
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:id="@+id/button6"
+                        />
+
+                    <Button
+                        android:text="Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:id="@+id/button5"
+                      />
+                </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -268,27 +289,6 @@
                         android:visibility="invisible"
                         android:id="@+id/calendarView2" />
                 </FrameLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="1">
-
-                <Button
-                    android:text="Button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:id="@+id/button6"
-                    />
-
-                <Button
-                    android:text="Button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:id="@+id/button5"
-                  />
             </LinearLayout>
 
         </LinearLayout>
